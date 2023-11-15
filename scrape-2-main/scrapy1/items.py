@@ -42,3 +42,6 @@ class Product(scrapy.Item):
         # Custom setter function to remove spaces from the price
         if value is not None:
             self['price'] = bleach_html(value).replace("€","").replace(",","").replace(" ","").strip()
+            
+            
+            test add
